@@ -1,0 +1,11 @@
+cache: npm
+
+script: npm run build
+
+deploy:
+ provider: pages
+ skip_cleanup: true
+ github_token: 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
+ local_dir: dist
+ on:
+   branch: main
